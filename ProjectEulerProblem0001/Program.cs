@@ -15,7 +15,7 @@ namespace ProjectEulerProblem0001
             Console.WriteLine("Project Euler Problem 001 " + SolveProjectEulerProblem001());
         }
         /// <summary>
-        /// Find the sum of all the multiples of 3 or 5 or below 1000
+        /// Find the sum of all the multiples of 3 or 5 or 7 below 1000
         /// </summary>
         /// <returns>The solution to the problem</returns>
         static int SolveProjectEulerProblem001()
@@ -24,7 +24,7 @@ namespace ProjectEulerProblem0001
             int sum = 0;
             for (int i = 0; i < 1000; i++)
             {
-                if (i % 3 == 0 || i % 5 == 0)
+                if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) // || is logical OR
                 {
                     sum = sum + i;
                 }
